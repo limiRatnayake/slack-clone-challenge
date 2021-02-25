@@ -2,7 +2,6 @@ import React from "react";
 import styled from "styled-components";
 import AccessTimeIcon from "@material-ui/icons/AccessTime";
 import HelpIcon from "@material-ui/icons/Help";
-import AccountCircleOutlinedIcon from "@material-ui/icons/AccountCircleOutlined";
 
 function Header() {
    return (
@@ -19,7 +18,7 @@ function Header() {
          <UserContainer>
             <Name>Limani</Name>
             <UserImage>
-               <AccountCircleOutlinedIcon />
+               <img src="https://randomuser.me/api/portraits/women/79.jpg" />
             </UserImage>
          </UserContainer>
       </Container>
@@ -79,6 +78,7 @@ const Search = styled.div`
 const UserContainer = styled.div`
    display: flex;
    align-items: center;
+   justify-content: center;
    padding-right: 16px;
    position: absolute;
    right: 0;
@@ -88,12 +88,11 @@ const Name = styled.div`
    color: black;
 `;
 const UserImage = styled.div`
-   color: black;
-   //    width: 28px;
-   //    height: 28px;
-   //    border: 2px solid white;
-   //    border-radius: 3px;
-   //    img {
-   //       width: 100%;
-   //    }
+   width: 28px;
+   height: 28px;
+   border: 2px solid white;
+   border-radius: 3px;
+   img {
+      width: 100%;
+   }
 `;
